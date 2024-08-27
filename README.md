@@ -7,14 +7,14 @@ original paper: https://ieeexplore.ieee.org/document/4648062
 Note that we observe that there are some typos in this paper, so we modified the formulation, the version to be implemented is shown below
 ```math
 \begin{aligned}
-& H(\boldsymbol{x}) \approx-\blue{\sum_{i=1}^L \omega_i }\red{\int_{\mathbb{R}^N}  \mathcal{N}\left({x} ; {\mu}_i, \mathbf{C}_i\right) \cdot\green{
- \left(\sum_{k=0}^R {\frac{1}{k!}\left(\left(\red{x}-\blue{{\mu}_i}\right) \odot \nabla\right)^k \log g({x})}\right) }\mathrm{d} {x}}
+& H(\boldsymbol{x}) \approx-{\sum_{i=1}^L \omega_i }{\int_{\mathbb{R}^N}  \mathcal{N}\left({x} ; {\mu}_i, \mathbf{C}_i\right) \cdot{
+ \left(\sum_{k=0}^R {\frac{1}{k!}\left(\left(\red{x}-{{\mu}_i}\right) \odot \nabla\right)^k \log g({x})}\right) }\mathrm{d} {x}}
 \end{aligned}$
 ```
 
 The vector-valued scalar function 
 ```math 
-$\begin{aligned} \log g(x) = \log\left(\sum\limits_{i=1}^L \omega_i \cdot \mathcal{N}\left({x}; {\mu}_i, \mathbf{C}_i\right)\right)\end{aligned}$
+$\begin{aligned} \log {g(x)} = \log\left(\sum\limits_{i=1}^L \omega_i \cdot \mathcal{N}\left({x}; {\mu}_i, \mathbf{C}_i\right)\right)\end{aligned}$
 ```
 mapped 
 
