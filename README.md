@@ -16,9 +16,8 @@ The vector-valued scalar function
 ```math 
 \begin{aligned} \log\ {g(x)} = \log\ \left(\sum\limits_{i=1}^L \omega_i \cdot \mathcal{N}\left({x}; {\mu}_i, \mathbf{C}_i\right)\right)\end{aligned}
 ```
-mapped $\mathbb{R}^d \rightarrow \mathbb{R}$
+mapped $\mathbb{F}^d \rightarrow \mathbb{F}$
 
-$ \mathbb{R} $
 
 is approximated by  
 
