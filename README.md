@@ -16,11 +16,7 @@ The vector-valued scalar function
 ```math 
 \begin{aligned} \log\ {g(x)} = \log\ \left(\sum\limits_{i=1}^L \omega_i \cdot \mathcal{N}\left({x}; {\mu}_i, \mathbf{C}_i\right)\right)\end{aligned}
 ```
-mapped 
-
-```math 
-\mathbb R^d \rightarrow \mathbb R
-```
+mapped $\mathbb{R}^d \rightarrow \mathbb{R}$
 
 is approximated by  
 
@@ -33,7 +29,7 @@ where $R\leq L$ is the truncation order.
 The vector-valued scalar function taylor series expansion is by 
 
 ```math
-$\begin{aligned}f(x) \approx f(x_0) + \nabla f(x_0) \cdot (x - x_0) + \frac{1}{2} (x - x_0)^\top H(x_0) (x - x_0) + \sum_{k=3}^{n} \frac{1}{k!} D^{(k)}f(x_0) \cdot (x - x_0)^{\otimes k} + \text{h.o.t}\end{aligned}$
+\begin{aligned}f(x) \approx f(x_0) + \nabla f(x_0) \cdot (x - x_0) + \frac{1}{2} (x - x_0)^\top H(x_0) (x - x_0) + \sum_{k=3}^{n} \frac{1}{k!} D^{(k)}f(x_0) \cdot (x - x_0)^{\otimes k} + \text{h.o.t}\end{aligned}
 ```
 
 ### 2. Lower Bound
