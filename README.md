@@ -18,6 +18,8 @@ The vector-valued scalar function
 ```
 mapped $\mathbb{R}^d \rightarrow \mathbb{R}$
 
+$ \mathbb{R} $
+
 is approximated by  
 
 ```math
