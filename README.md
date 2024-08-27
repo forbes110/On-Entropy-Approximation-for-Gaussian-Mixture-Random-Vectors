@@ -9,7 +9,7 @@ Note that we observe that there are some typos in this paper, so we modified the
 \begin{aligned}
 & H(\boldsymbol{x}) \approx-{\sum_{i=1}^L \omega_i }{\int_{\mathbb{R}^N}  \mathcal{N}\left({x} ; {\mu}_i, \mathbf{C}_i\right) \cdot{
  \left(\sum_{k=0}^R {\frac{1}{k!}\left(\left({x}-{{\mu}_i}\right) \odot \nabla\right)^k \log\ g({x})}\right) }\mathrm{d} {x}}
-\end{aligned}$
+\end{aligned}
 ```
 
 The vector-valued scalar function 
