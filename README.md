@@ -14,7 +14,7 @@ Note that we observe that there are some typos in this paper, so we modified the
 
 The vector-valued scalar function 
 ```math 
-$\begin{aligned} \log {g(x)} = \log\left(\sum\limits_{i=1}^L \omega_i \cdot \mathcal{N}\left({x}; {\mu}_i, \mathbf{C}_i\right)\right)\end{aligned}$
+$\begin{aligned} \log\ {g(x)} = \log\left(\sum\limits_{i=1}^L \omega_i \cdot \mathcal{N}\left({x}; {\mu}_i, \mathbf{C}_i\right)\right)\end{aligned}$
 ```
 mapped 
 
