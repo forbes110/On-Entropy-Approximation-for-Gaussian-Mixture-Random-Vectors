@@ -22,7 +22,6 @@ def EntropyEst(gmm_params, R, num_samples, random_seed):
         The number of samples to use for Monte Carlo integration.
     """
 
-
     weights, means, covariances = gmm_params
     L = len(weights)
 
@@ -109,7 +108,6 @@ def log_g_function(x, gmm_params):
         g += weights[i] * multivariate_normal.pdf(x, mean=means[i], cov=covariances[i])
 
     return jnp.log(g)
-
 
 if __name__ == '__main__':
 

@@ -1,8 +1,6 @@
 import jax.numpy as jnp
 from jax.scipy.stats import multivariate_normal
 
-
-
 def calculate_z_ij(mean_i, mean_j, cov_i, cov_j):
     combined_cov = cov_i + cov_j  # Sum of covariance matrices
     z_ij = multivariate_normal.pdf(mean_i, mean_j, combined_cov)
@@ -38,13 +36,11 @@ def EntropyUpperBoundEst(weights, covariances):
 
     return H_u
 
-
-
 if __name__ == '__main__':
     # GMM parameters
-    weights = jnp.array([0.125 for _ in range(8)])  # The weights of the GMM
-    means = [jnp.array([0.0, 0.0, 0.0]) for _ in range(8)]  # The means of the GMM components
-    covariances = [jnp.eye(3) for _ in range(8)]  # The covariance matrices of the GMM components
+    weights = jnp.array([0.125 for _ in range(8)]) 
+    means = [jnp.array([0.0, 0.0, 0.0]) for _ in range(8)] 
+    covariances = [jnp.eye(3) for _ in range(8)]  
     
     
     # Calculate the entropy lower bound
