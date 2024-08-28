@@ -31,5 +31,12 @@ The vector-valued scalar function taylor series expansion is by
 ```
 
 ### 2. Lower Bound
+```math
+\begin{aligned}
+& H_l({\boldsymbol{x}})=-\sum_{i=1}^L \omega_i \cdot \log \left(\sum_{j=1}^L \omega_j \cdot z_{i, j}\right) \end{aligned}
+```
+where $z_{i, j}=\mathcal{N}\left({\mu}_i ; {\mu}_j, \mathbf{C}_i+\mathbf{C}_j\right)$
 ### 3. Upper Bound
-
+```math
+\begin{aligned}H_u({\boldsymbol{x}})=\sum_{i=1}^L \omega_i \cdot\left(-\log \omega_i+\frac{1}{2} \log \left((2 \pi e)^N\left|\mathbf{C}_i\right|\right)\right)\end{aligned}
+```
