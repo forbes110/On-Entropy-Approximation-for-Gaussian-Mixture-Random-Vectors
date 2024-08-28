@@ -1,8 +1,7 @@
 import numpy as np
-import math
 from time import time
 import jax.numpy as jnp
-from jax import grad, vmap, hessian, jacfwd, jacrev
+from jax import vmap
 from jax.scipy.stats import multivariate_normal
 from jax import random
 from scipy.integrate import nquad

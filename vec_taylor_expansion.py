@@ -1,6 +1,6 @@
 import numpy as np
 import math
-from jax import grad, hessian, jacfwd, jit
+from jax import grad, hessian, jacfwd
 import jax.numpy as jnp
 
 def vec_in_scalar_out_taylor_expansion(x, x_0, func, params, R=4):
