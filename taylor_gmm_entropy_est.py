@@ -6,6 +6,7 @@ from jax.scipy.stats import multivariate_normal
 from jax import random
 from scipy.integrate import nquad
 from vec_taylor_expansion import vec_in_scalar_out_taylor_expansion
+from entropy_bounds import EntropyLowerBoundEst, EntropyUpperBoundEst
 
 def EntropyEst(gmm_params, R, num_samples, random_seed):
     """
@@ -122,4 +123,8 @@ if __name__ == '__main__':
     gmm_params = (weights, means, covariances)
     H_approx = EntropyEst(gmm_params, R = 2, num_samples = 1000000, random_seed=42)
 
-    print(H_approx)
+    H_l = EntropyLowerBoundEst(gmm_params)
+    H_u = EntropyUpperBoundEst(weights, covariances)
+    print("Lower Bound:", H_l)
+    print("Approx:", H_approx)
+    print("Upper Bound:", H_u)
