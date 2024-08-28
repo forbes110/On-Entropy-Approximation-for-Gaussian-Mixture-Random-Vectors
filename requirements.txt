@@ -2,3 +2,4 @@ jax
 numpy
 scipy
 tqdm
+torchquad
