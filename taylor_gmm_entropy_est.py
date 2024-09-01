@@ -112,11 +112,9 @@ def log_g_function(x, gmm_params):
 if __name__ == '__main__':
 
     # ------------------------------------------------------------------------------
-    # Example usage: L = 2 for dim 4
-    # weights = jnp.array([0.1 for _ in range(10)])
+    # Example usage: L = 8 for dim 3, can use the compaer_closed_form.py to check the difference
     weights = jnp.array([0.125 for _ in range(8)])
     means = [jnp.array([0.0, 0.0, 0.0]) for _ in range(8)]
-    # means = [np.random.rand(3) for _ in range(5)]
     covariances = [jnp.eye(3) for _ in range(8)]
     gmm_params = (weights, means, covariances)
     H_approx = EntropyEst(gmm_params, R = 2, num_samples = 1000000, random_seed=42)
